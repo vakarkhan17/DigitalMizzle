@@ -16,7 +16,10 @@ const adminPages = new Set([
   "tools-management.html"
 ]);
 
-const currentPage = location.pathname.split("/").pop() || "index.html";
+const currentPathName = location.pathname.split("/").pop() || "index";
+const currentPage = currentPathName.includes(".")
+  ? currentPathName
+  : `${currentPathName}.html`;
 let currentUser = null;
 let currentProfile = null;
 
@@ -88,6 +91,12 @@ async function loadProfile(user) {
       is_disabled: false
     };
   }
+
+  data.full_name =
+    data.full_name?.trim() ||
+    user.user_metadata?.full_name?.trim() ||
+    "DigitalMizzle Learner";
+  data.email = data.email?.trim() || user.email || "";
 
   if (data.is_disabled) {
     await supabase.auth.signOut();
