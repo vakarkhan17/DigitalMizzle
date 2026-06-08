@@ -1,0 +1,219 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    const courseId = new URLSearchParams(location.search).get("course");
+    if (courseId === "ethical-hacking-practical-path" || courseId === "ethical-hacking-path") {
+      location.replace("ethical-hacking-detail.html?course=ethical-hacking-practical-path");
+    }
+  </script>
+  <title>Kali Linux Foundations Course | DigitalMizzle</title>
+  <meta name="description" content="Learn Kali Linux fundamentals, safe virtual lab setup, terminal commands, networking, essential cybersecurity tools, and ethical testing practices.">
+  <link rel="stylesheet" href="assets/css/course-detail.css">
+<link rel="stylesheet" href="assets/css/access-control.css"><script src="assets/js/access-session.js"></script></head>
+<body>
+  <header class="topbar">
+    <nav class="nav shell" aria-label="Main navigation">
+      <a class="brand" href="index.html">
+        <img src="assets/img/digital-mizzle-logo.jpeg" alt="DigitalMizzle logo">
+        <span>DigitalMizzle</span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false">Menu</button>
+      <div class="nav-links">
+        <a href="courses.html">Courses</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="tools.html">Tools</a>
+        
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a class="auth-only" href="login.html">Login</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="course-hero">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-scan" aria-hidden="true"></div>
+      <div class="shell hero-layout">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">DigitalMizzle Academy / Course 001</span>
+          <h1>Kali Linux <span>Foundations</span></h1>
+          <p class="subtitle">Master the basics of Kali Linux for ethical hacking, cybersecurity labs, and professional security testing.</p>
+          <p class="terminal-type"><span>$</span> initialize --safe-lab --beginner<span class="cursor"></span></p>
+          <div class="course-meta" aria-label="Course information">
+            <div class="difficulty-meta"><small>Difficulty</small><strong>Beginner Â· Intermediate Â· Advanced</strong></div>
+            <div><small>Duration</small><strong>6-8 hours</strong></div>
+            <div><small>Lessons</small><strong>10+</strong></div>
+            <div><small>Category</small><strong>Cybersecurity / Kali Linux</strong></div>
+          </div>
+          <div class="actions">
+            <a class="btn primary" href="#curriculum">Start Course</a>
+            <a class="btn" href="#curriculum">Preview Lessons</a>
+            
+          </div>
+        </div>
+        <aside class="course-visual reveal" aria-label="Kali Linux course status">
+          <div class="visual-screen">
+            <div class="screen-bar"><span></span><span></span><span></span><b>DMZ // LAB CONSOLE</b></div>
+            <img src="assets/img/cyber-hero.png" alt="Cybersecurity operations workspace">
+            <div class="screen-overlay">
+              <code>root@kali:~# systemctl status lab</code>
+              <strong>SAFE ENVIRONMENT ACTIVE</strong>
+              <div class="meter"><i></i></div>
+              <small>Isolation status: VERIFIED</small>
+            </div>
+          </div>
+          <div class="visual-label"><span>Course access</span><strong>FREE PREVIEW</strong></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section shell overview-grid" id="overview">
+      <div class="section-copy reveal">
+        <span class="eyebrow">Course overview</span>
+        <h2>Start with a safe, structured Kali workflow.</h2>
+        <p>This course introduces Kali Linux from the ground up. You will learn how to build an isolated virtual lab, navigate the terminal, manage files and packages, understand basic networking, and explore essential security tools responsibly.</p>
+        <p>Every lesson emphasizes legal authorization, repeatable lab habits, and practical foundations that prepare you for deeper ethical hacking and defensive security topics.</p>
+      </div>
+      <div class="overview-terminal reveal">
+        <div class="terminal-head"><span></span><span></span><span></span><b>course-outline.sh</b></div>
+        <pre><code><em>[+]</em> Safe lab deployment
+<em>[+]</em> Linux terminal essentials
+<em>[+]</em> Network configuration
+<em>[+]</em> Security tool orientation
+<em>[+]</em> Ethical testing workflow
+<i>[OK]</i> Beginner path validated</code></pre>
+      </div>
+    </section>
+
+    <section class="section learn-section">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Learning objectives</span>
+          <h2>What you will learn</h2>
+          <p>Practical skills arranged around the way you will actually use Kali Linux in a controlled environment.</p>
+        </div>
+        <div class="learn-grid">
+          <article class="feature reveal"><b>01</b><h3>Understand Kali</h3><p>Learn what Kali Linux is, what it is designed for, and when security professionals use it.</p></article>
+          <article class="feature reveal"><b>02</b><h3>Build a virtual lab</h3><p>Install Kali safely with VirtualBox or VMware and isolate your testing environment.</p></article>
+          <article class="feature reveal"><b>03</b><h3>Use the terminal</h3><p>Run core commands, navigate the file system, and work with files, permissions, and users.</p></article>
+          <article class="feature reveal"><b>04</b><h3>Configure networking</h3><p>Understand interfaces, addresses, connectivity checks, and basic network troubleshooting.</p></article>
+          <article class="feature reveal"><b>05</b><h3>Manage Kali</h3><p>Update the operating system and install, remove, and maintain packages responsibly.</p></article>
+          <article class="feature reveal"><b>06</b><h3>Explore security tools</h3><p>Meet foundational tools such as Nmap and web testing utilities in authorized labs.</p></article>
+          <article class="feature reveal"><b>07</b><h3>Practice ethically</h3><p>Apply safe, legal testing boundaries and understand why written permission matters.</p></article>
+          <article class="feature reveal"><b>08</b><h3>Plan your next step</h3><p>Build a beginner lab and prepare for ethical hacking and penetration testing paths.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" id="curriculum">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Course curriculum</span>
+        <h2>10 guided modules</h2>
+        <p>Choose your depth, then expand any module. The curriculum updates instantly without leaving the page.</p>
+      </div>
+      <div class="course-controls reveal">
+        <div class="difficulty-control">
+          <span class="control-label">Difficulty profile</span>
+          <div class="difficulty-selector" role="group" aria-label="Select course difficulty">
+            <button type="button" data-difficulty="beginner" class="active">Beginner</button>
+            <button type="button" data-difficulty="intermediate">Intermediate</button>
+            <button type="button" data-difficulty="advanced">Advanced</button>
+          </div>
+        </div>
+        <div class="preview-actions">
+          
+          <button class="btn ghost" id="resetProgress" type="button">Reset Progress</button>
+        </div>
+      </div>
+      <div class="lesson-progress reveal" aria-label="Course completion progress">
+        <div><span>Preview progress</span><strong id="progressText">0 of 10 modules complete</strong></div>
+        <div class="progress-track"><span id="progressBar"></span></div>
+      </div>
+      <div class="lesson-content" id="lessonContent"></div>
+    </section>
+
+    <section class="section profile-section">
+      <div class="shell profile-grid">
+        <article class="info-panel reveal">
+          <span class="eyebrow">Who this is for</span>
+          <h2>Designed for new security learners.</h2>
+          <ul class="check-list">
+            <li>Beginners in cybersecurity</li><li>IT support professionals</li><li>System administrators</li>
+            <li>Students</li><li>Ethical hacking learners</li><li>Anyone building a home lab</li>
+          </ul>
+        </article>
+        <article class="info-panel reveal" id="requirements">
+          <span class="eyebrow">Prerequisites</span>
+          <h2>What you need before starting.</h2>
+          <ul class="check-list">
+            <li>Basic computer knowledge</li><li>Virtualization-capable laptop or desktop</li>
+            <li>VirtualBox or VMware</li><li>A legal and ethical learning mindset</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section shell requirements-grid">
+      <div class="lab-card reveal">
+        <span class="eyebrow">Lab requirements</span>
+        <h2>Prepare your workstation</h2>
+        <div class="spec-grid">
+          <div><small>Host OS</small><strong>Windows 10/11, Linux, or macOS</strong></div>
+          <div><small>Memory</small><strong>8 GB minimum, 16 GB recommended</strong></div>
+          <div><small>Storage</small><strong>40 GB free disk space</strong></div>
+          <div><small>Hypervisor</small><strong>VirtualBox or VMware Workstation Player</strong></div>
+          <div><small>Guest OS</small><strong>Kali Linux ISO from the official source</strong></div>
+          <div><small>Optional</small><strong>Intentionally vulnerable practice VM</strong></div>
+        </div>
+      </div>
+      <aside class="ethics-card reveal">
+        <span class="warning">AUTHORIZED USE ONLY</span>
+        <h2>Ethical use disclaimer</h2>
+        <p>This course is strictly for legal, ethical, and educational cybersecurity training. Students must only test systems they own or have written permission to assess.</p>
+        <code>scope = owned || written_permission</code>
+      </aside>
+    </section>
+
+    <section class="section outcomes" id="outcomes">
+      <div class="shell outcome-layout">
+        <div class="section-copy reveal">
+          <span class="eyebrow">Course outcome</span>
+          <h2>Leave with a working lab and a clear path forward.</h2>
+          <p>After completing the course, you will have the confidence to use Kali's core environment responsibly and continue into more advanced cybersecurity study.</p>
+        </div>
+        <ol class="outcome-list reveal">
+          <li><span>01</span>Install and operate Kali Linux in a safe lab</li>
+          <li><span>02</span>Use basic terminal commands</li>
+          <li><span>03</span>Understand common cybersecurity tools</li>
+          <li><span>04</span>Build a legal beginner practice lab</li>
+          <li><span>05</span>Continue toward ethical hacking and penetration testing</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="course-cta">
+      <div class="shell reveal">
+        <span class="eyebrow">DigitalMizzle learning path</span>
+        <h2>Ready to enter the lab?</h2>
+        <p>Build the foundation first. Test responsibly. Document everything.</p>
+        <div class="actions centered"><a class="btn primary" href="#curriculum">Start Course</a><a class="btn" href="#overview">Review Overview</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="shell"><span>DigitalMizzle</span><small>Exploring, Exploiting, Securing</small></div></footer>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/premium.js"></script>
+  <script src="assets/js/course-detail.js"></script>
+</body>
+</html>
+
+
+
+
+

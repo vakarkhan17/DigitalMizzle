@@ -1,0 +1,33 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login Required | DigitalMizzle</title>
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/access-control.css">
+</head>
+<body class="access-page">
+  
+  <header class="topbar"><nav class="nav shell"><a class="brand" href="index.html"><img class="brand-logo" src="assets/img/digital-mizzle-logo.jpeg" alt="DigitalMizzle logo"><span>DigitalMizzle</span></a><div class="nav-links"><a href="courses.html">Courses</a><a href="blogs.html">Blogs</a><a href="tools.html">Tools</a><a href="about.html">About</a><a href="contact.html">Contact</a></div></nav></header>
+  <main class="access-gate access-shell">
+    <section class="access-card access-gate-card">
+      <span class="access-lock">LOCKED</span>
+      <span class="eyebrow" style="display:block;margin-top:20px">Protected learning material</span>
+      <h1>Continue learning.</h1>
+      <p>Create a free DigitalMizzle account or login to continue learning.</p>
+      <div class="access-unlocks"><span>Full courses</span><span>Complete blogs</span><span>Tool guides</span><span>Commands and labs</span><span>Quizzes</span><span>Progress tracking</span></div>
+      <div class="actions"><a class="btn primary" id="gateRegister" href="register.html">Create Free Account</a><a class="btn ghost" id="gateLogin" href="login.html">Login</a></div>
+    </section>
+  </main>
+  <script>
+    const next = new URLSearchParams(location.search).get("next");
+    if (next) {
+      document.querySelector("#gateLogin").href = `login.html?next=${encodeURIComponent(next)}`;
+      document.querySelector("#gateRegister").href = `register.html?next=${encodeURIComponent(next)}`;
+    }
+  </script>
+</body>
+</html>
+

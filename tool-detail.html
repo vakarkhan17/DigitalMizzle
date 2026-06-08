@@ -1,0 +1,71 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cybersecurity Tool Guide | DigitalMizzle</title>
+  <meta name="description" content="DigitalMizzle professional cybersecurity tool guides with difficulty-aware learning, safe commands, defensive use cases, troubleshooting, quizzes, and progress.">
+  <link rel="stylesheet" href="assets/css/tool-guides.css">
+<link rel="stylesheet" href="assets/css/access-control.css"><script src="assets/js/access-session.js"></script></head>
+<body class="guide-page">
+  <header class="topbar">
+    <nav class="nav shell">
+      <a class="brand" href="index.html"><img src="assets/img/digital-mizzle-logo.jpeg" alt="DigitalMizzle logo"><span>DigitalMizzle</span></a>
+      <button class="menu-button" type="button">Menu</button>
+      <div class="nav-links"><a href="courses.html">Courses</a><a href="blogs.html">Blogs</a><a href="tools.html">Tools</a><a href="about.html">About</a><a href="contact.html">Contact</a><a class="auth-only" href="login.html">Login</a></div>
+    </nav>
+  </header>
+  <main>
+    <section class="guide-hero">
+      <div class="guide-grid" aria-hidden="true"></div>
+      <div class="shell guide-hero-layout">
+        <div>
+          <span class="eyebrow" id="toolCategory">Tool knowledge base</span>
+          <h1 id="toolName">Tool Guide</h1>
+          <p id="toolSummary"></p>
+          <div class="tool-meta" id="toolMeta"></div>
+          <div class="guide-actions"><a class="btn primary" href="#guideContent">Start Guide</a><a class="btn ghost" href="tools.html">All Tools</a></div>
+        </div>
+        <aside class="tool-console">
+          <div class="console-head"><span></span><span></span><span></span><b>DMZ // TOOL CONSOLE</b></div>
+          <div class="console-body">
+            <code id="heroCommand">$ tool --inspect</code>
+            <strong id="toolStatus">DEFENSIVE WORKFLOW READY</strong>
+            <div class="console-meter"><i></i></div>
+            <small>Scope: localhost / learner-owned lab / authorized environment</small>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="guide-workspace shell" id="guideContent">
+      <aside class="guide-sidebar">
+        <label class="guide-search"><span>Search this guide</span><input id="guideSearch" type="search" placeholder="Search sections and topics"></label>
+        <span class="control-label">Knowledge level</span>
+        <div class="difficulty-selector">
+          <button type="button" data-level="beginner">Beginner</button>
+          <button type="button" data-level="intermediate">Intermediate</button>
+          <button type="button" data-level="advanced">Advanced</button>
+        </div>
+        <div class="progress-panel">
+          <div><span>Learning progress</span><strong id="progressText">0%</strong></div>
+          <div class="progress-track"><span id="progressBar"></span></div>
+          <button class="text-button" id="resetProgress" type="button">Reset progress</button>
+        </div>
+        <nav class="section-nav" id="sectionNav" aria-label="Guide sections"></nav>
+      </aside>
+      <article class="guide-content" id="guideSections"></article>
+    </section>
+    <section class="section related-band"><div class="shell"><div class="section-heading"><span class="eyebrow">Continue learning</span><h2>Related tools</h2></div><div class="related-grid" id="relatedTools"></div></div></section>
+  </main>
+  <footer><div class="shell"><strong>DigitalMizzle</strong><span>Use security tools only on systems you own or have written authorization to assess.</span></div></footer>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/tool-guides-data.js"></script>
+  <script src="assets/js/tool-guide.js"></script>
+</body>
+</html>
+
+
+
+

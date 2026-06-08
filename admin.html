@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Console | DigitalMizzle</title>
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/access-control.css">
+<script src="assets/js/access-session.js"></script></head>
+<body class="access-page">
+  
+  <header class="topbar">
+    <nav class="nav shell">
+      <a class="brand" href="index.html"><img class="brand-logo" src="assets/img/digital-mizzle-logo.jpeg" alt="DigitalMizzle logo"><span>DigitalMizzle</span></a>
+      <div class="nav-links"><a href="index.html">Public Site</a><a href="dashboard.html">Learner View</a><button class="btn ghost" type="button" data-preview-logout>Logout</button></div>
+    </nav>
+  </header>
+  <main class="access-shell dashboard-preview">
+    <section class="dashboard-welcome">
+      <div><span class="eyebrow">Role-protected console</span><h1>Platform operations.</h1><p>Visible only when the verified preview identity is <strong>vakar.khan@gmail.com</strong>.</p></div>
+      <aside class="identity-card"><span>ACTIVE ROLE</span><strong>Administrator</strong><small>Local session · Supabase JWT and RLS integration prepared</small></aside>
+    </section>
+    <section class="dynamic-stats">
+      <article><span>Total Users</span><strong>1</strong><small>Seeded admin profile only</small></article>
+      <article><span>Courses</span><strong id="adminCourses">0</strong><small>Read from current data.js</small></article>
+      <article><span>Blogs</span><strong id="adminBlogs">0</strong><small>Read from current data.js</small></article>
+      <article><span>Tools</span><strong id="adminTools">0</strong><small>Read from current data.js</small></article>
+    </section>
+    <section class="dashboard-preview-grid">
+      <article class="dashboard-module">
+        <span class="eyebrow">Content operations</span><h2>Manage publishing</h2>
+        <div class="grid three">
+          <a class="card" href="course-editor.html" data-accent="CRS"><h3>Courses</h3><p>Create, edit, publish, and organize modules and lessons.</p></a>
+          <a class="card" href="blog-editor.html" data-accent="BLG"><h3>Blogs</h3><p>Manage articles, metadata, categories, and publishing status.</p></a>
+          <a class="card" href="tools-management.html" data-accent="TLS"><h3>Tools</h3><p>Maintain defensive tool guides and difficulty content.</p></a>
+        </div>
+        <span class="source-label">CURRENT COUNTS ARE REAL FROM STATIC data.js; CRUD STILL REQUIRES DATABASE APIs</span>
+      </article>
+      <article class="dashboard-module">
+        <span class="eyebrow">Security posture</span><h2>Required controls</h2>
+        <ul class="activity-list"><li>Supabase Auth email confirmation</li><li>Admin custom claim / profile role</li><li>Row Level Security policies</li><li>Server-side admin API checks</li><li>Audit logging</li></ul>
+      </article>
+      <article class="dashboard-module">
+        <span class="eyebrow">User administration</span><h2>Seeded identity</h2>
+        <table class="table"><thead><tr><th>Email</th><th>Role</th><th>Status</th></tr></thead><tbody><tr><td>vakar.khan@gmail.com</td><td>admin</td><td style="color:var(--access-green)">Seed required</td></tr></tbody></table>
+        <span class="source-label">PRODUCTION ROLE MUST COME FROM DATABASE/JWT, NEVER BROWSER STORAGE</span>
+      </article>
+      <article class="dashboard-module">
+        <span class="eyebrow">Analytics</span><h2>Awaiting backend</h2><p class="lede">Enrollments, active users, views, and completion metrics need event and progress tables.</p><span class="source-label">DUMMY UNTIL SUPABASE IS CONNECTED</span>
+      </article>
+    </section>
+  </main>
+  <script src="assets/js/data.js"></script>
+  
+  <script>
+    document.querySelector("#adminCourses").textContent = window.DMZ_DATA.courses.length;
+    document.querySelector("#adminBlogs").textContent = window.DMZ_DATA.blogs.length;
+    document.querySelector("#adminTools").textContent = window.DMZ_DATA.tools.length;
+  </script>
+</body>
+</html>
+
+

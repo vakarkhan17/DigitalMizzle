@@ -1,0 +1,26 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog Editor | DigitalMizzle Preview</title>
+  <link rel="stylesheet" href="assets/css/styles.css"><link rel="stylesheet" href="assets/css/premium.css">
+<link rel="stylesheet" href="assets/css/access-control.css"><script src="assets/js/access-session.js"></script></head>
+<body>
+  <header class="topbar"><nav class="nav shell"><a class="brand" href="index.html"><img class="brand-logo" src="assets/img/digital-mizzle-logo.jpeg" alt="DigitalMizzle logo"><span>DigitalMizzle Admin</span></a><div class="nav-links"><a href="admin.html">Dashboard</a><a href="blogs.html">View blogs</a></div></nav></header>
+  <main class="workspace-shell">
+    <aside class="workspace-nav panel"><a href="admin.html">Overview</a><a href="course-editor.html">Course editor</a><a href="blog-editor.html">Blog editor</a><a href="tools-management.html">Tools management</a></aside>
+    <section class="workspace-main">
+      <div><span class="eyebrow">SEO publishing console</span><h1 style="font-size:clamp(2.2rem,4vw,4rem)">Create blog post</h1><p class="lede">Write, optimize, preview, and publish cyber intelligence articles.</p></div>
+      <div class="editor-grid">
+        <section class="panel editor-panel"><form class="editor-form" data-preview-form><label>Post title<input name="title" value="How to Triage a Suspicious Authentication Alert"></label><div class="grid two"><label>Category<select name="category"><option>SIEM</option><option>Kali Linux</option><option>Cyber Awareness</option></select></label><label>Status<select><option>Draft</option><option>Published</option></select></label></div><label>SEO title<input value="Authentication Alert Triage Guide | DigitalMizzle"></label><label>Meta description<textarea rows="3">A practical SOC workflow for validating suspicious login alerts and documenting evidence.</textarea></label><label>Keywords<input value="SIEM, SOC, authentication, alert triage"></label><label>Article content<textarea rows="12">Start with context: user, source, device, and expected behavior.&#10;&#10;Validate the signal against identity logs, endpoint evidence, and known travel or VPN patterns.&#10;&#10;Document the timeline before escalating.</textarea></label><div class="editor-actions"><button class="btn primary" type="submit">Save preview draft</button><button class="btn" type="button">Publish</button><button class="btn ghost" type="button">Add image</button></div></form><div class="notice" data-editor-notice></div></section>
+        <aside class="panel preview-window" data-live-preview><span class="chip green" data-preview-category>SIEM</span><h2 data-preview-title style="margin-top:18px">How to Triage a Suspicious Authentication Alert</h2><p>DigitalMizzle Blue Team / 7 min read</p><p class="terminal-line">$ seo --audit</p><p>Title: ready<br>Meta: ready<br>Keywords: 4<br>Schema: BlogPosting</p></aside>
+      </div>
+    </section>
+  </main>
+  <script src="assets/js/premium.js"></script>
+</body>
+</html>
+
+
+
+

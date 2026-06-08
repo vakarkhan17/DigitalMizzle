@@ -1,0 +1,26 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Course Editor | DigitalMizzle Preview</title>
+  <link rel="stylesheet" href="assets/css/styles.css"><link rel="stylesheet" href="assets/css/premium.css">
+<link rel="stylesheet" href="assets/css/access-control.css"><script src="assets/js/access-session.js"></script></head>
+<body>
+  <header class="topbar"><nav class="nav shell"><a class="brand" href="index.html"><img class="brand-logo" src="assets/img/digital-mizzle-logo.jpeg" alt="DigitalMizzle logo"><span>DigitalMizzle Admin</span></a><div class="nav-links"><a href="admin.html">Dashboard</a><a href="index.html">View site</a></div></nav></header>
+  <main class="workspace-shell">
+    <aside class="workspace-nav panel"><a href="admin.html">Overview</a><a href="course-editor.html">Course editor</a><a href="blog-editor.html">Blog editor</a><a href="tools-management.html">Tools management</a></aside>
+    <section class="workspace-main">
+      <div><span class="eyebrow">Admin content studio</span><h1 style="font-size:clamp(2.2rem,4vw,4rem)">Create course</h1><p class="lede">Build modules and lessons with a clear publishing workflow.</p></div>
+      <div class="editor-grid">
+        <section class="panel editor-panel"><form class="editor-form" data-preview-form><label>Course title<input name="title" value="Advanced Network Defense"></label><div class="grid two"><label>Category<select name="category"><option>Network Security</option><option>Kali Linux</option><option>SIEM & IDS/IPS</option></select></label><label>Difficulty<select><option>Intermediate</option><option>Beginner</option><option>Advanced</option></select></label></div><div class="grid two"><label>Duration<input value="8 hours"></label><label>Access<select><option>Premium</option><option>Free</option></select></label></div><label>Description<textarea rows="4">Investigate traffic, tune detections, and harden network boundaries through guided defensive labs.</textarea></label><label>Modules and lessons<textarea rows="10">Module 1: Network visibility&#10;- Baseline traffic&#10;- Capture strategy&#10;&#10;Module 2: Detection engineering&#10;- Signatures and behavior&#10;- Validation workflow</textarea></label><div class="editor-actions"><button class="btn primary" type="submit">Save preview draft</button><button class="btn" type="button">Publish</button><button class="btn ghost" type="button">Add module</button></div></form><div class="notice" data-editor-notice></div></section>
+        <aside class="panel preview-window" data-live-preview><span class="chip green" data-preview-category>Network Security</span><h2 data-preview-title style="margin-top:18px">Advanced Network Defense</h2><p>Intermediate / 8 hours / Premium</p><div class="progress" style="--progress:68%"><span></span></div><p class="terminal-line">$ modules --validate</p><p>2 modules ready / media checks passed / SEO fields pending</p></aside>
+      </div>
+    </section>
+  </main>
+  <script src="assets/js/premium.js"></script>
+</body>
+</html>
+
+
+
+

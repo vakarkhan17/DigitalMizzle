@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://digitalmizzle.example/sitemap.xml
