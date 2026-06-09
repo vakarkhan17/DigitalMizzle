@@ -11,6 +11,7 @@ const protectedPages = new Set([
 ]);
 const adminPages = new Set([
   "admin.html",
+  "admin-analytics.html",
   "course-editor.html",
   "blog-editor.html",
   "tools-management.html"

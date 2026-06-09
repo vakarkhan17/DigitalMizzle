@@ -1,3 +1,8 @@
 User-agent: *
 Allow: /
-Sitemap: https://digitalmizzle.example/sitemap.xml
+Disallow: /admin
+Disallow: /dashboard
+Disallow: /course-editor
+Disallow: /blog-editor
+Disallow: /tools-management
+Sitemap: https://www.digitalmizzle.com/sitemap.xml

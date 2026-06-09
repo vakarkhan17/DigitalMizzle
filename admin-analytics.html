@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Analytics Center | DigitalMizzle</title>
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/access-control.css">
+  <script type="module" src="assets/js/access-session.js?v=20260609"></script>
+</head>
+<body class="access-page">
+  <header class="topbar">
+    <nav class="nav shell">
+      <a class="brand" href="index.html"><img class="brand-logo" src="assets/img/digital-mizzle-logo.jpeg" alt="DigitalMizzle logo"><span>DigitalMizzle</span></a>
+      <div class="nav-links"><a href="admin.html">Admin Console</a><a href="index.html">Public Site</a><button class="btn ghost" type="button" data-preview-logout>Logout</button></div>
+    </nav>
+  </header>
+  <main class="access-shell dashboard-preview">
+    <section class="dashboard-welcome">
+      <div><span class="eyebrow">Administrator analytics</span><h1>Site reach &amp; activity.</h1><p>Monitor platform accounts and learning records, then open Google Analytics for acquisition and traffic reporting.</p></div>
+      <aside class="identity-card"><span>LIVE SITE</span><strong>www.digitalmizzle.com</strong><small id="analyticsStatus">Checking data sources...</small></aside>
+    </section>
+    <section class="dynamic-stats">
+      <article><span>Registered Users</span><strong id="analyticsUsers">--</strong><small>Supabase profiles</small></article>
+      <article><span>Courses Started</span><strong id="analyticsCourses">--</strong><small>Course progress records</small></article>
+      <article><span>Quiz Attempts</span><strong id="analyticsQuizzes">--</strong><small>Quiz result records</small></article>
+      <article><span>Activity Events</span><strong id="analyticsEvents">--</strong><small>User activity records</small></article>
+    </section>
+    <section class="dashboard-preview-grid">
+      <article class="dashboard-module">
+        <span class="eyebrow">Google Analytics 4</span>
+        <h2>Traffic and audience reports</h2>
+        <p class="lede">View visitors, sessions, traffic sources, countries, devices, engagement, and page performance in the protected Google Analytics console.</p>
+        <a class="btn primary" href="https://analytics.google.com/" target="_blank" rel="noopener noreferrer">Open Google Analytics</a>
+        <span class="source-label">GA4 TRACKING REQUIRES YOUR MEASUREMENT ID</span>
+      </article>
+      <article class="dashboard-module">
+        <span class="eyebrow">Search visibility</span>
+        <h2>Google Search Console</h2>
+        <p class="lede">Submit the corrected sitemap and request re-indexing after the apex-domain DNS issue is resolved.</p>
+        <a class="btn" href="https://search.google.com/search-console" target="_blank" rel="noopener noreferrer">Open Search Console</a>
+        <p><code>https://www.digitalmizzle.com/sitemap.xml</code></p>
+      </article>
+      <article class="dashboard-module">
+        <span class="eyebrow">Domain health</span>
+        <h2>Canonical host</h2>
+        <ul class="activity-list">
+          <li>Primary working host: https://www.digitalmizzle.com</li>
+          <li>Apex digitalmizzle.com must be added to Cloudflare Pages</li>
+          <li>HTTP must redirect permanently to HTTPS</li>
+          <li>All indexed URLs should use one canonical hostname</li>
+        </ul>
+      </article>
+      <article class="dashboard-module">
+        <span class="eyebrow">Data connection</span>
+        <h2>Supabase status</h2>
+        <p class="lede" id="analyticsMessage">Loading protected aggregate counts...</p>
+        <span class="source-label">VISIBLE ONLY TO DATABASE ROLE: ADMIN</span>
+      </article>
+    </section>
+  </main>
+  <script type="module" src="assets/js/admin-analytics.js"></script>
+</body>
+</html>
