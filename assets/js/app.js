@@ -32,14 +32,18 @@ function cardCourse(course) {
 function cardBlog(post) {
   return `
     <article class="card" data-accent="POST">
+      <a class="blog-card-media" href="${post.route || `blog-detail.html?post=${post.id}`}">
+        <img src="${post.featuredImage || "assets/img/cyber-hero.png"}" alt="" loading="lazy">
+      </a>
       <h3>${post.title}</h3>
       <div class="meta">
         <span class="chip green">${post.category}</span>
         <span class="chip">${post.date}</span>
+        ${post.readTime ? `<span class="chip">${post.readTime}</span>` : ""}
       </div>
       <p>${post.excerpt}</p>
       <p>${post.tags.map((tag) => `#${tag}`).join(" ")}</p>
-      <a class="btn" href="blog-detail.html?post=${post.id}">Read article</a>
+      <a class="btn" href="${post.route || `blog-detail.html?post=${post.id}`}">Read article</a>
     </article>`;
 }
 

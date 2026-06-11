@@ -5,7 +5,6 @@ const protectedPages = new Set([
   "course-detail.html",
   "ethical-hacking-detail.html",
   "course-learning.html",
-  "blog-detail.html",
   "tool-detail.html",
   "dashboard.html"
 ]);

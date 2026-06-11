@@ -52,30 +52,39 @@
   blogs: [
     {
       id: "kali-linux-workflow",
+      route: "blog-kali-linux-workflow.html",
+      featuredImage: "assets/img/blogs/kali-linux-workflow.png",
       title: "Building a Clean Kali Linux Workflow for Beginners",
       category: "Kali Linux",
-      author: "DigitalMizzle Research",
+      author: "DigitalMizzle Team",
       date: "June 4, 2026",
+      readTime: "11 min read",
       tags: ["Kali", "Labs", "Beginner"],
       excerpt: "A practical guide to keeping your ethical hacking lab organized, legal, and repeatable.",
       meta: "Learn how to organize Kali Linux labs, notes, tools, and evidence for ethical hacking practice."
     },
     {
       id: "siem-detection-basics",
+      route: "blog-siem-detection-basics.html",
+      featuredImage: "assets/img/blogs/siem-detection-basics.png",
       title: "SIEM Detection Basics: From Noisy Logs to Useful Alerts",
       category: "SIEM",
-      author: "DigitalMizzle Blue Team",
+      author: "DigitalMizzle Team",
       date: "May 28, 2026",
+      readTime: "13 min read",
       tags: ["SIEM", "Detection", "SOC"],
       excerpt: "How to think about log sources, false positives, and detection rules that actually help analysts.",
       meta: "Understand SIEM detection basics, alert quality, and practical SOC investigation workflows."
     },
     {
       id: "nethunter-mobile-labs",
+      route: "blog-nethunter-mobile-labs.html",
+      featuredImage: "assets/img/blogs/nethunter-mobile-labs.png",
       title: "NetHunter Mobile Labs: Responsible Practice Setup",
       category: "NetHunter",
-      author: "DigitalMizzle Labs",
+      author: "DigitalMizzle Team",
       date: "May 20, 2026",
+      readTime: "12 min read",
       tags: ["NetHunter", "Mobile", "Awareness"],
       excerpt: "Create controlled mobile security labs while respecting authorization and local laws.",
       meta: "Set up responsible NetHunter labs for mobile security education and cyber awareness."
